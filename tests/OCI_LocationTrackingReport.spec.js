@@ -1,10 +1,11 @@
-import { test } from '@playwright/test';
-import { login } from '../PageObject/login';
-import { waitForPageLoad } from '../PageObject/wait';
-import DashboardActions from '../PageObject/Navigate';
-import SearchActions from '../PageObject/Search';
-import PerformanceMetricsCollector from '../Common/PerformanceMetricsCollector';
-import { selectFromDateWithTextbox } from '../PageObject/DateUtils';
+import { test } from '@playwright/test';  // Importing 'test' from Playwright's test framework for defining tests
+import { login } from '../PageObject/login';  // Importing the 'login' function from the login module in PageObject folder
+import { waitForPageLoad } from '../PageObject/wait';  // Importing 'waitForPageLoad' function from wait module in PageObject folder
+import DashboardActions from '../PageObject/Navigate';  // Importing DashboardActions class from Navigate module in PageObject folder
+import SearchActions from '../PageObject/Search';  // Importing SearchActions class from Search module in PageObject folder
+import PerformanceMetricsCollector from '../Common/PerformanceMetricsCollector';  // Importing PerformanceMetricsCollector class from Common folder
+import { selectFromDateWithFilter } from '../PageObject/DateUtils';  // Importing 'selectFromDateWithFilter' function from DateUtils module in PageObject folder
+
 
 test('OCI_LocationTrackingReport', async ({ page }) => {
     console.log("OCI_LocationTrackingReport");

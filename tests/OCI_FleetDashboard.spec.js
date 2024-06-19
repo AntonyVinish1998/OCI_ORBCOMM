@@ -1,8 +1,8 @@
-import { test } from '@playwright/test';
-import { login } from '../PageObject/login';
-import { waitForPageLoad } from '../PageObject/wait';
-import DashboardActions from '../PageObject/Navigate';
-import PerformanceMetricsCollector from '../Common/PerformanceMetricsCollector';
+import { test } from '@playwright/test';// Importing 'test' from Playwright's test framework for defining tests
+import { login } from '../PageObject/login';// Importing the 'login' function from the login module in PageObject folder
+import { waitForPageLoad } from '../PageObject/wait';// Importing 'waitForPageLoad' function from wait module in PageObject folder
+import DashboardActions from '../PageObject/Navigate';// Importing DashboardActions class from Navigate module in PageObject folder
+import PerformanceMetricsCollector from '../Common/PerformanceMetricsCollector'; // Importing PerformanceMetricsCollector class from Common folder
 
 test('OCI_FleetDashboard', async ({ page }) => {
     console.log("OCI_FleetDashboard");
